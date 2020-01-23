@@ -1,0 +1,72 @@
+%optimizacionej1peravicris {
+  display: grid;
+  justify-content: center;
+  border: 2px solid black;
+}
+@mixin bordeverdeperavicris($color) {
+    border: 1px solid $color;
+}
+%bordeazulperavicris{
+    border: solid 1px blue;
+}
+.headerperavicris {
+  @extend %optimizacionej1peravicris;
+  &__Elementoimagenperavicris {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.PerAviCriscontenedor1ConBorderVerde {
+    width: 80%;
+    float: left;
+    min-height: 460px;
+    @include bordeverdeperavicris(green);
+    box-sizing: border-box;
+}
+.PerAviCriscontenedor1ConBorderAzul {
+    width: 20%;
+    min-height: 460px;
+    text-align: center;
+    float: right;
+    box-sizing: border-box;
+    @extend %bordeazulperavicris;
+    &__imagenrecurso5peravicris{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+%contenedoresfooterperavicris{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    min-height: 100px;
+    
+}
+
+.footer{
+    &__peravicrisFooter1{
+        text-align: center;
+        @extend %contenedoresfooterperavicris;
+        &__imagenrecurso6peravicris{
+            max-width: 100%;
+            height: auto;
+
+        }
+    }
+    &__peravicrisFooter2{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+     
+    }
+    &__peravicrisFooter3{
+        @extend %contenedoresfooterperavicris;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}

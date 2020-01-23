@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / PerAviCris / Ej1</title>
+    <link rel="stylesheet" href="hoja1.css">
+</head>
+
+<body>
+    <header class="headerperavicris">
+        <h1>Inicio del examen 23-01-2020. Alumno: PerAviCris</h1>
+        <figure>
+            <img src="Recursos/Recurso1.png" alt="recurso1" title="Logo de GIMP"
+                class="headerperavicris__Elementoimagenperavicris">
+            <figcaption>Imagen editada por PerAviCris</figcaption>
+        </figure>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons"
+                style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Esta obra
+        está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licencia Creative Commons
+            Atribución-NoComercial 4.0 Internacional</a>.
+    </header>
+
+    <section>
+        <div class="PerAviCriscontenedor1ConBorderVerde">
+            <picture>
+                <source media="(min-width: 500px)" srcset="Recursos/Recurso2.jpg">
+                <source media="(min-width: 400px)" srcset="Recursos/Recurso3.jpg">
+                <img src="Recursos/Recurso4.jpg" alt="Imagen retrocompatible">
+            </picture>
+
+        </div>
+
+        <div class="PerAviCriscontenedor1ConBorderAzul">
+            <img src="Recursos/Recurso5.png" alt="recurso 5"
+                class="PerAviCriscontenedor1ConBorderAzul__imagenrecurso5peravicris">
+            <input type="button" value="boton" id="botonid" onclick="almacen()">
+            <p id="parrafo"></p>
+
+            <script type="text/javascript">
+
+                function almacen() {
+
+                    if (typeof (Storage) !== "undefined") {
+
+                        localStorage.setItem("30");
+                        document.getElementById("parrafo").innerHTML = localStorage.getItem("30");
+
+                    } else {
+                        document.getElementById("parrafo").innerHTML = "El navegador no es compatible con almacenamiento local";
+                    }
+                }
+
+            </script>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__peravicrisFooter1">
+            <img src="Recursos/Recurso6.png" alt="recurso6" class="footer__peravicrisFooter1__imagenrecurso6peravicris">
+            <input type="button" value="hola" onclick="hola()">
+            <p id="p1"></p>
+            <script type="text/javascript">
+
+                function hola() {
+
+                    if (typeof (Storage) !== "undefined") {
+
+                        sessionStorage.setItem(1);
+                        document.getElementById("p1").innerHTML = sessionStorage.getItem(1);
+                        document.getElementById("p1").value * 7;
+
+                    } else {
+                        document.getElementById("parrafo").innerHTML = "El navegador no es compatible con almacenamiento local";
+                    }
+                }
+
+            </script>
+        </div>
+
+        <div class="footer___peravicrisFooter2">
+            <audio id="audio1" controls class="footer__peravicrisFooter2">
+                <source src="Recursos/Recurso7.mp3" type="audio/mpeg">
+                <source src="Recursos/Recurso7.ogg" type="audio/ogg">
+                <source src="Recursos/Recurso7.wav" type="audio/wav"> Tu navegador no soporta esta etiqueta HTML5
+            </audio>
+            
+            <button onclick="reiniciar()" class="footer__peravicrisFooter2">Reiniciar</button>
+
+            <script>
+                function reiniciar() {
+                    audio1.currentTime = 0;
+                    if (audio1.paused) {
+                        audio1.play();
+                        interval = setInterval(mostrarDuracion, 100);
+                    }
+                }
+
+            </script>
+
+
+        </div>
+
+        <div class="footer__peravicrisFooter3">
+            <a href="per_avi_cris_230120_ej2.html">Enlace al segundo ejercicio</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.headerperavicris {
+  display: grid;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.PerAviCriscontenedor1ConBorderAzul {
+  border: solid 1px blue;
+}
+
+.headerperavicris__Elementoimagenperavicris {
+  max-width: 100%;
+  height: auto;
+}
+
+.PerAviCriscontenedor1ConBorderVerde {
+  width: 80%;
+  float: left;
+  min-height: 460px;
+  border: 1px solid green;
+  box-sizing: border-box;
+}
+
+.PerAviCriscontenedor1ConBorderAzul {
+  width: 20%;
+  min-height: 460px;
+  text-align: center;
+  float: right;
+  box-sizing: border-box;
+}
+.PerAviCriscontenedor1ConBorderAzul__imagenrecurso5peravicris {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer__peravicrisFooter3, .footer__peravicrisFooter1 {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+
+.footer__peravicrisFooter1 {
+  text-align: center;
+}
+.footer__peravicrisFooter1__imagenrecurso6peravicris {
+  max-width: 100%;
+  height: auto;
+}
+.footer__peravicrisFooter2 {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+.footer__peravicrisFooter3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=hoja1.css.map */
