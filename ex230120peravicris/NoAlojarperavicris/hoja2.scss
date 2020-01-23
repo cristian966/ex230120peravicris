@@ -1,0 +1,18 @@
+.sectionperavicris{
+    &__div1peravicris{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        display: grid;
+        justify-content: center;
+    }
+    &__div2peravicris{
+        text-align: center;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+       button{
+           border-radius: 10px;
+       }
+    }
+}

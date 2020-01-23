@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hoja2.css">
+    <title>Examen 23-01-2020 / PerAviCris / Ej2</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <section class="sectionperavicris">
+        <div class="sectionperavicris__div1peravicris">
+            <video id="video1" controls>
+                <source src="Recursos/Recurso8.avi" type="video/mp4"> 
+                <source src="Recursos/Recurso8.ogg" type="video/ogg">
+                <source src="Recursos/Recurso8.webm" type="video/webm"> Tu navegador no soporta esta etiqueta HTML5
+            </video> 
+        </div> 
+        <div class="sectionperavicris__div2peravicris">
+                
+                <button onclick="document.getElementById('video1').pause()">Pausar el Vídeo</button>
+                <button onclick="document.getElementById('video1').volume+=0.1">Aumentar el Volumen del Vídeo</button>
+                <button onclick="document.getElementById('video1').volume-=0.1">Disminuir el Volumen del Vídeo</button>
+                <button onclick="reiniciar()" class="sectionperavicris__div2peravicris">Reiniciar</button>
+
+                <script>
+                    function reiniciar() {
+                        video1.currentTime = 0;
+                        if (video1.paused) {
+                            video1.play();
+                            interval = setInterval(mostrarDuracion, 100);
+                        }
+                    }
+    
+                </script>
+        </div>
+    </section>
+</body>
+
+</html>

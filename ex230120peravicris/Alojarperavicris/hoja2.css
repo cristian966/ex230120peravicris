@@ -1,0 +1,18 @@
+.sectionperavicris__div1peravicris {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+}
+.sectionperavicris__div2peravicris {
+  text-align: center;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+.sectionperavicris__div2peravicris button {
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=hoja2.css.map */
